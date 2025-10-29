@@ -60,7 +60,6 @@ dependencies:
   - pandas=2.3.3=py313h6316d20_0
   - pcre2=10.46=h1dacb4a_0
   - pillow=11.3.0=py313h6dd570d_0
-  - pip=25.2=pyhc872135_1
   - pixman=0.46.4=h09dc60e_0
   - pyparsing=3.2.0=py313hca03da5_0
   - python=3.13.9=hc7d8306_100_cp313
@@ -90,6 +89,7 @@ dependencies:
       - certifi==2025.10.5
       - charset-normalizer==3.4.4
       - idna==3.11
+      - pip==25.3
       - requests==2.32.5
       - urllib3==2.5.0
 prefix: /opt/anaconda3/envs/data_analysis
