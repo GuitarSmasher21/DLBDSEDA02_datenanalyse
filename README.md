@@ -14,6 +14,8 @@ Die Analyse wird anhand folgender Schritte ausgeführt:
 Es wird empfohlen, eine virtuelle Umgebung (z.B. `conda` oder `venv`) zu verwenden.
 Dazu stehen die Umgebungsdateien "requirements.txt" und "requirements.yml" zur Verfügung.
 
+## 2. Script-Aufbau
+
 Der Code ist modular aufgebaut, um die Lesbarkeit und Wartbarkeit zu verbessern.
 * main.py: Das Hauptskript, das den gesamten Workflow steuert und die einzelnen Module aufruft.
 * schritt_1_ressourcen_initialisieren.py: Initialisiert HanTa und NLTK-Ressourcen.
