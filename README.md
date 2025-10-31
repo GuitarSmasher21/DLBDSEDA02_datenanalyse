@@ -10,7 +10,7 @@ Die Analyse wird anhand folgender Schritte ausgeführt:
 * Themenmodellierung mit LDA (Latent Dirichlet Allocation) und NMF (Non-Negative Matrix Factorization)
 * Visualisierung der Ergebnisse mittels pyLDAvis und matplotlib
 
-### 1. Installation
+## 1. Installation
 
 Es wird empfohlen, eine virtuelle Umgebung (z.B. `conda` oder `venv`) zu verwenden.
 Dazu stehen die Umgebungsdateien "requirements.txt" und "requirements.yml" zur Verfügung.
