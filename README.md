@@ -19,6 +19,7 @@ Dazu stehen die Umgebungsdateien "requirements.txt" und "requirements.yml" zur V
 
 Der Code ist modular aufgebaut, um die Lesbarkeit und Wartbarkeit zu verbessern.
 * main.py: Das Hauptskript, das den gesamten Workflow steuert und die einzelnen Module aufruft.
+* scripts/: Ordner, der die gesamten Module enthält.
 * schritt_1_ressourcen_initialisieren.py: Initialisiert HanTa und NLTK-Ressourcen.
 * schritt_2_daten_laden.py: Lädt und normalisiert die JSON-Daten.
 * schritt_3_text_vorverarbeitung.py: Führt die NLP-Vorverarbeitung durch.
