@@ -13,7 +13,8 @@ Die Analyse wird anhand folgender Schritte ausgeführt:
 ## 1. Installation
 
 Es wird empfohlen, eine virtuelle Umgebung (z.B. `conda` oder `venv`) zu verwenden.
-Dazu stehen die Umgebungsdateien "requirements.txt" und "requirements.yml" zur Verfügung.
+
+Im Ordner "environment" befinden sich die Umgebungsdateien "requirements.txt" und "requirements.yml". 
 
 ## 2. Script-Aufbau
 
@@ -26,3 +27,6 @@ Der Code ist modular aufgebaut, um die Lesbarkeit und Wartbarkeit zu verbessern.
 * schritt_4_vektorisierung.py: Führt BoW- und Tf-idf-Vektorisierung sowie den Vergleich durch.
 * schritt_5_themenmodilierung.py: Trainiert die LDA- und NMF-Modelle und erstellt die pyLDAvis-Visualisierung.
 * schritt_6_visualisierung.py: Erstellt das finale matplotlib-Balkendiagramm.
+
+## 3. Ergebnisse
+Die visuellen Ergebnisse aus der Python-Script Ausführung befinden sich im Ordner "results".
