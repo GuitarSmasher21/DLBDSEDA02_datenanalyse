@@ -187,23 +187,6 @@ def vorbereitung_gensim(df, verarbeitete_spalte):
     else:
         print("ABBRUCH: DataFrame ist leer oder Spalte 'verarbeiteter_text' fehlt.")
         return None, None, None
-'''# Funktionsdefintion Schritt 5.2 - Training LDA-Datenmodell
-def lda_model_training(corpus, id2word, token_liste, opt_k):
-    print(f"\n LDA Modellierung (Finales Modell mit K={opt_k})") # Ausgabe der gesetzen Themen (manuell festgelegt)
-    if 'corpus' in locals() and 'id2word' in locals() and 'token_liste' in locals():
-        try:
-            final_lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=opt_k,random_state=42, passes=15, alpha='auto') # LDA Modell festlegen
-            print(f"INFO: Top 10 Wörter pro Thema (LDA):")
-            lda_topics = final_lda_model.print_topics(num_words=10)
-            for idx, topic in lda_topics:
-                print(f"  Thema #{idx}: {topic}") # Ausgabe der 10 Themen
-            return final_lda_model
-        except Exception as e:
-            print(f"FEHLER: LDA-Training fehlgeschlagen: {e}")
-    else:
-        print("FEHLER: Gensim-Variablen fehlen. Abschnitt 5.1 prüfen.")
-    return None
-'''
 # Funktionsdefintion Schritt 5.2 - Training LDA-Datenmodell
 def lda_model_training(corpus, id2word, token_liste, opt_k):
     print(f"\n LDA Modellierung (Finales Modell mit K={opt_k})") 
