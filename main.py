@@ -190,7 +190,6 @@ def vorbereitung_gensim(df, verarbeitete_spalte):
 # Funktionsdefintion Schritt 5.2 - Training LDA-Datenmodell
 def lda_model_training(corpus, id2word, token_liste, opt_k):
     print(f"\n LDA Modellierung (Finales Modell mit K={opt_k})") 
-    
     # Prüfen ob die Variablen existieren
     if corpus and id2word and token_liste:
         try:
@@ -203,13 +202,11 @@ def lda_model_training(corpus, id2word, token_liste, opt_k):
                 passes=15, 
                 alpha='auto'
             ) 
-            
             # 2. Themen ausgeben
             print(f"INFO: Top 10 Wörter pro Thema (LDA):")
             lda_topics = final_lda_model.print_topics(num_words=10)
             for idx, topic in lda_topics:
                 print(f"  Thema #{idx}: {topic}") 
-            
             # 3. Coherence Score Berechnung (Nutzt den globalen Import 'CoherenceModel')
             print("\nINFO: Berechne Coherence Score (Qualitätsprüfung)...")
             try:
@@ -223,14 +220,11 @@ def lda_model_training(corpus, id2word, token_liste, opt_k):
                 print(f"ERGEBNIS: Der Coherence Score (C_v) für K={opt_k} beträgt: {coherence_lda:.4f}")
             except Exception as e:
                 print(f"WARNUNG: Coherence konnte nicht berechnet werden: {e}")
-
             return final_lda_model
-
         except Exception as e:
             print(f"FEHLER: LDA-Training fehlgeschlagen: {e}")
     else:
         print("FEHLER: Gensim-Variablen fehlen. Abschnitt 5.1 prüfen.")
-    
     return None
 # Funktionsdefintion Schritt 5.3 - Vorbereitung Visualisierung
 def lda_visualisieren(model, corpus, id2word, filepath='lda_visualisierung.html'):
@@ -301,11 +295,11 @@ def schritt_6_finale_visualisierung(model, topic_id=4, filepath='lda_themen_diag
 def main():
     # --- 1. KONFIGURATION & INITIALISIERUNG ---
     # Konstanten und Pfade
-    DATEI_PFAD = '/Users/michi/VisualStudio/Data_Analysis/DLBDSEDA02_datenanalyse/unstructured_data.json'
+    DATEI_PFAD = '/Users/michi/VisualStudio/Data_Analysis/DLBDSEDA02_datenanalyse/unstructured_data.json' #Dateipfad entsprechend anpassen; JSON-Datei von GitHub herunterladen
     JSON_INDEX = 'index'
     JSON_SPALTE = 'betreff'
     VERARBEITETE_SPALTE = 'verarbeiteter_text'
-    OPT_K = 10 
+    OPT_K = 10 #Optimale Anzahl Themen auf 10 setzen.
 
     # NLP-Ressourcen initialisieren
     tagger_de, hanta_initialisiert, de_stoppwoerter = schritt_1_ressourcen_initialisieren()
@@ -341,7 +335,7 @@ def main():
     # --- 6. FINALE VISUALISIERUNG ---
     if final_lda_model:
         schritt_6_finale_visualisierung(final_lda_model, topic_id=4)
-    print("\n--- Workflow erfolgreich abgeschlossen. ---")
+    print("\n Datenanalyse erfolgreich abgeschlossen! ")
 
 if __name__ == "__main__": # Ablauf nur über "main.py" ausgeführt
     main()
