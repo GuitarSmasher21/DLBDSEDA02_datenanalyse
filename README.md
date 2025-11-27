@@ -41,4 +41,4 @@ Der Dateipfad ist anschließend in der Hauptdatei (main.py) in Zeile 298 anzupas
 Ergebnisse, die sich aus der Ausführung des Skripts ergeben, werden entsprechend im selben lokalen Pfad abgelegt. 
 
 ## 3. Ergebnisse
-Die visuellen Ergebnisse aus der Python-Script Ausführung befinden sich im Ordner "results".
+Die visuellen Ergebnisse aus der Python-Script Ausführung im Rahmen der Bearbeitung befinden sich im Ordner "results".
