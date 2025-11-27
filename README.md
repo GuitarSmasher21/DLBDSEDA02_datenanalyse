@@ -14,19 +14,13 @@ Die Analyse wird anhand folgender Schritte ausgeführt:
 
 Es wird empfohlen, eine virtuelle Umgebung (z.B. `conda` oder `venv`) zu verwenden.
 
-Im Ordner "environment" befinden sich die Umgebungsdateien "requirements.txt" und "requirements.yml". 
+Im Ordner "environment" befinden sich die Umgebungsdateien "requirements.txt" und "requirements.yml", welche entsprechend in eine neue virtuelle Umgebung importiert werden können.
 
 ## 2. Script-Aufbau
 
-Der Code ist modular aufgebaut, um die Lesbarkeit und Wartbarkeit zu verbessern.
-* main.py: Das Hauptskript, das den gesamten Workflow steuert und die einzelnen Module aufruft.
-* scripts/: Ordner, der die gesamten Module enthält.
-* schritt_1_ressourcen_initialisieren.py: Initialisiert HanTa und NLTK-Ressourcen.
-* schritt_2_daten_laden.py: Lädt und normalisiert die JSON-Daten.
-* schritt_3_text_vorverarbeitung.py: Führt die NLP-Vorverarbeitung durch.
-* schritt_4_vektorisierung.py: Führt BoW- und Tf-idf-Vektorisierung sowie den Vergleich durch.
-* schritt_5_themenmodilierung.py: Trainiert die LDA- und NMF-Modelle und erstellt die pyLDAvis-Visualisierung.
-* schritt_6_visualisierung.py: Erstellt das finale matplotlib-Balkendiagramm.
+Der Code wurde in eine Hauptdatei zusammengefasst (main.py). Für die Ausführung muss die Datei "unstructured_data.json" heruntergeladen und in einem lokalen Verzeichnis abgelegt werden.
+Der verwendete Dateipfad ist ebenfalls in der Hauptdatei (main.py) anzupassen, damit auf die Datei im Programmablauf zugegriffen werden kann.
+Ergebnisse, die sich aus der Ausführung des Skripts ergeben, werden entsprechend im selben lokalen Pfad wie die zuvor geladene Datei abgelegt. 
 
 ## 3. Ergebnisse
 Die visuellen Ergebnisse aus der Python-Script Ausführung befinden sich im Ordner "results".
