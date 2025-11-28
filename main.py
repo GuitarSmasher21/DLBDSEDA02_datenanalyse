@@ -337,5 +337,4 @@ def main():
         schritt_6_finale_visualisierung(final_lda_model, topic_id=4)
     print("\n Datenanalyse erfolgreich abgeschlossen! ")
 
-if __name__ == "__main__": # Ablauf nur über "main.py" ausgeführt
-    main()
+main()
