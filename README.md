@@ -32,14 +32,14 @@ Der Code wurde in eine Hauptdatei zusammengefasst (main.py) und kann nur über d
 
 ## 3. Script-Ausführung
 * main.py
-** Zusammengefasster Hauptcode
-** Zur Ausführung wird die Datei "unstructured_data.json" in einem lokalen Verzeichnis benötigt. Diese muss also vorab heruntergeladen werden.
-** Dateipfad ist im Hauptcode in Zeile 298 anzupassen
-** Ergebnisse nach Ausführung des Codes befinden sich im selben lokalen Pfad wie im vorherigen Schritt definiert.
+  - Zusammengefasster Hauptcode
+  - Zur Ausführung wird die Datei "unstructured_data.json" in einem lokalen Verzeichnis benötigt. Diese muss also vorab heruntergeladen werden.
+  - Dateipfad ist im Hauptcode in Zeile 298 anzupassen
+  - Ergebnisse nach Ausführung des Codes befinden sich im selben lokalen Pfad wie im vorherigen Schritt definiert.
 
 * download_data.py
-*   Hilfssrkipt, mit welchem die Datei "unstructured_data.json" heruntergeladen wurde.
-*   Dieses Skript muss **nicht** ausgeführt werden und dient nur zur Dokumentation.
+  - Hilfssrkipt, mit welchem die Datei "unstructured_data.json" heruntergeladen wurde.
+   - Dieses Skript muss **nicht** ausgeführt werden und dient nur zur Dokumentation.
 
 ## 4. Ergebnisse
 Die visuellen Ergebnisse aus der Python-Script Ausführung befinden sich im Ordner "results".
