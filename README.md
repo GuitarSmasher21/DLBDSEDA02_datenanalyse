@@ -38,8 +38,8 @@ Der Code wurde in eine Hauptdatei zusammengefasst (main.py) und kann nur über d
 ** Ergebnisse nach Ausführung des Codes befinden sich im selben lokalen Pfad wie im vorherigen Schritt definiert.
 
 * download_data.py
-** Hilfssrkipt, mit welchem die Datei "unstructured_data.json" heruntergeladen wurde.
-** Dieses Skript muss *nicht* ausgeführt werden und dient nur zur Dokumentation.
+*   Hilfssrkipt, mit welchem die Datei "unstructured_data.json" heruntergeladen wurde.
+*   Dieses Skript muss **nicht** ausgeführt werden und dient nur zur Dokumentation.
 
 ## 4. Ergebnisse
 Die visuellen Ergebnisse aus der Python-Script Ausführung befinden sich im Ordner "results".
